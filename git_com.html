@@ -13,12 +13,33 @@
 <h1>gitのコマンドリスト</h1>
 
 <table>
-	<th>
+	<tr>
+		<th>コマンド</th>
+		<th>挙動</th>
+		
+	</tr>
+	<tr>
 		<td>git init</td>
-		<td>git status</td>
-		<td>git log</td>
-		<td>git add ファイル名</td>
-	</th>
+		<td>初期化</td>
+	</tr>
+	<tr><td>git add ファイル名</td><td>インデックス領域にあげる</td></tr>
+	<tr><td>git add .</td><td>インデックス領域に変更ファイルすべてをあげる</td></tr>
+	<tr><td>git commit</td><td>インデックス領域にあるファイルをコミット</td></tr>
+	<tr><td>git commit -m "コメント"</td><td>commitのコメント簡易版</td></tr>
+	<tr><td>git status</td><td>gitのステータスを見る</td></tr>
+	<tr><td>git log</td><td>gitのログを見る</td></tr>
+	<tr><td>git log --pretty short</td><td>logの簡易表示版</td></tr>
+	<tr><td>git diff</td><td>変更箇所がわかる</td></tr>
+	<tr><td>git push</td><td>Git Hubへあげる</td></tr>
+	<tr><td>git pull</td><td>Git Hubから落としてくる</td></tr>
+	<tr><td>git branch ブランチ名</td><td>ブランチの作成</td></tr>
+	<tr><td>git checkout ブランチ名</td><td>ブランチの移動</td></tr>
+	<tr><td>git push -u origin</td><td>Git Hubへブランチをあげる</td></tr>
+	<tr><td>git branch -d ブランチ名</td><td>ブランチの削除</td></tr>
+	<tr><td>git branch</td><td>現状のブランチを見る</td></tr>
+	<tr><td>git merge --no-ff ブランチ名</td><td>ブランチのマージ</td></tr>
+	<tr><td>git log --graph</td><td>ブランチの流れを可視化</td></tr>
+
 </table>
 
 </body>
