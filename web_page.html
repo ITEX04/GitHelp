@@ -8,5 +8,42 @@
 
 <h1>git hub Webページの作り方</h1>
 
+<p>次の手順で作成</p>
+<ul>
+<li>ローカルでWebページの作成</li>
+
+<li>GitHubにリポジトリ作成</li>
+
+<li>ローカルでファイル(index.htmlなど)を追加してadd→commit→push</li>
+<p>
+まずは作成したリポジトリをローカルにクローンします。<br>
+git clone https://github.com/ユーザー名/リポジトリ名.git<br><br>
+クローンしたリポジトリのディレクトリに移動してください。<br>
+cd リポジトリ名<br><br>
+作成したhtmlファイル等をディレクトリ内にコピーしてください。 <br>cssやらjsやらimagesやらがあればそのまままとめてコピーしてください。<br>
+cp -r コピー元ディレクトリ/* ./<br><br>
+ファイルをaddします；<br>
+git add *<br></br>
+ファイルをコミットします。コメントは適当に変えてください。<br>
+git commit -m 'first commit'<br><br>
+pushしてGitHubのリポジトリに反映させてください。<br>
+git push origin master<br><br>
+この段階でGitHubのリポジトリページを見るとファイルがアップされているはずです。
+</p>
+
+<li>gh-pagesブランチを作成</li>
+
+<li>gh-pagesへ移動</li>
+
+<li>index.htmlなどを作成</li>
+
+</ul>
+
+<p>以上の手順を踏み、<br>
+<strong>ユーザー名.github.io/リポジトリ名</strong>にアクセスすると、<br>
+作成したページが表示される</p>
+
+
+
 </body>
 </html>
